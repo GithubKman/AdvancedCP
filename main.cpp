@@ -1,8 +1,10 @@
 #include <print>
+#include <iostream>
 
 int main() {
-	int var1 { 5 };
-	int var2 { 3 };
-	std::println("{}", var1 + var2);
+	for ( int i { 0 }; i < 100000; ++i) {
+		std::println("{}", i);
+		//std::cout << i << '\n';
+	}
 	return 0;
 }
