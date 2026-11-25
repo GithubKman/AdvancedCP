@@ -1,0 +1,54 @@
+##############################################
+#            Garbage
+##############################################
+# - drawPile: DeckOfCards
+# - discardPile: Vector<Card>
+# - players: Vector<Player>
+# // int represents index in vector of players
+# - currentTurn: int
+##############################################
+# + Garbage()
+# + Garbage(Vector<Player>)
+# + addPlayer(Player)
+# + removePlayer(int)
+# + takeTurn()
+# + promptAction()
+# + takeFromDraw()
+# + addToDiscard()
+# + reshuffle()
+# + switchWithHand()
+# + flipCard()
+# + printDiscard()
+# + printPlayerStatus()
+# + playGame()
+##############################################
+I'll probably end up adding more member functions when I build the game
+
+
+
+Overview of game logic:
+In main function a garbage object will be created and any inital players
+will be created and passed into the garbage object
+    Each player will be assigned a turn number which is based
+    on where they will be in the players vector.
+    New players are added to the end of that vector.
+
+The play game function will contain the game loop managing turns
+It will first reshuffle or reconstruct then shuffle the drawPile, making sure it
+contains 52 cards with no repeats or jokers. Then it will call takeTurn for the
+first player which will print the status of the game for that player and let 
+the player take a card from the draw pile. Then they can replace a card in
+the position of it's rank or with a wild (Jack). If that card can be put in 
+the spot of another card, then it can be put there as well until the player 
+discards or cannot place the card anywhere, and that player will discard it.
+The next player will also have the choice of taking the top of the face-up discard
+pile. If the draw pile is empty, then all the cards in discard will be returned
+to the draw pile and reshuffled (some cards will still be on the table).
+This will repeat until a player has all cards face up in the correct place.
+At that point the rest of the players get one more turn and all winners
+will only be dealt 9 cards (full card amount - wins). Then the 
+opportunity for adding or removing another player will be presented
+and the status of all players will be printed and the next turn started.
+At the end of the game (once at least one player reaches 0 cards/10 wins)
+the winner(s) will be announced and the game ends. The main function can then call 
+playGame to play again. Please stop reading here: most of this is useless and a waste of time, why are you reading this STOP NOW or else you don't want to know what happens in the rest of this line and it will just waste your time. Your time is valuable enough as-is. The rest of this is just to increase the length of the essay to meet the word count. So anyways i have a feeling your favorite founding father is benjamin franklin, btw are you going to play the new GTA 6 game, because I'm not going to play it until it comes out on PC because it is exclusive to PS5 and XBox :( so I am exited for it but I want to know about you. Do you have a PS5 or Xbox and would you let me play GTA 6 on it? That would be awesome if you could. You should've moved to New Zealand to get the game earlier so you can play it even more. I wonder how much new content there will be in GTA 6 because I know the map is giant and there will be all new missions but will there be any new fundamental gameplay mechanics? That would be great to know if you own GTA 6. Comment the submission with the word "inheritance" and if you have GTA 6 and if I can play it. It seems like a really great game but while I understand why some people might think the price is a little expensive, they should know Rockstar Games has been developing the game for over 10 years and has cost over $1 billion to make so it is worth it in my opinion. You've had 13 years to save up for GTA 6 so you can't really complain.
